@@ -1,0 +1,35 @@
+OBJ1::Berry:A fine tasting berry:0:40:0:
+OBJ2::Axe:A shining axe of dwarfen make.:7:0:10:
+OBJ3::TeddyBear:Teddy Bear of Unexpected Power:7:0:20:
+KEY4::KEY:
+KEY5::KEY:
+VICTORYITEM::C++BookOfTruth:Bliss:0:0:1337:
+OUT1::Outside Castle:You see high towers, and at the top a blinking light..To the north you see the castle entrance:NULL:
+OUT2::Main Hall:You enter a magnificant Hall with a big wooden door to the west, and a magnificent marble staircase to the north:OBJ1:
+OUT3::Armory:The smell of metal and blood fill your nose as you enter a armory filled with weapons. \n You almost want to go back to the fancy main hall to the south, but your eyes fixate on a bright door to the east:OBJ2:
+OUT4::Treasury:Gold glimmer and diamonds sparkle, but at closer inspection you see they are only chocolate coins and diamond-shaped glass, what a dissapointment. \n You may want to head west to the armory again.:KEY4:
+OUT5::Corridor:A straight corridor, going from west to east.:NULL:
+OUT6::Dungeon:You enter a dark place, and by closer inspection you find yourself in a dungeon. \n In the midst of darkness, you spot a door to the north, and a door back east.:NULL:
+OUT7::Library:Dust from books fill your chest, and except for the door back south you cant see to go further. \n In the north of the library you spot a book called 'Beta':NULL:
+OUT8::Evil Tower:After rushing up along a very long staircase you find yourself in a strange tower. A shadow glances upon you when you enter.:NULL:
+EXIT1::north:true:OUT1:OUT2:
+EXIT2::south:true:OUT2:OUT1:
+EXIT3::north:true:OUT2:OUT3:
+EXIT4::west:true:OUT2:OUT5:
+EXIT5::south:true:OUT3:OUT2:
+EXIT6::east:true:OUT3:OUT4:
+EXIT7::west:true:OUT4:OUT3:
+EXIT8::east:true:OUT5:OUT2:
+EXIT9::west:true:OUT5:OUT6:
+EXIT10::east:true:OUT6:OUT5:
+EXIT11::north:false:OUT6:OUT7:
+EXIT12::south:false:OUT7:OUT6:
+EXIT13::north:false:OUT7:OUT8:
+EXIT14::south:false:OUT8:OUT7:
+PLAYER::Player:C++Noob:OUT1:Aj!:Tjabba:
+PLITEM::NULL:
+PLWEAPON::NULL:
+NPC1::SigSeg:A nasty bug:OUT4:Stupid human!:I will make you crash!:PLAYER:20:4:true:OBJ3:I will crash you!:
+NPC2::OutOfBounds:A stupid bug:OUT7:Are you blind Human?!:Get new eyes!:PLAYER:30:7:true:KEY5:Missed me?!:
+NPC3::FlipRoazen:A seemingly nice person:OUT6:Stop hitting me!!:Stop! Dont hit me traveller! I am a prisoner of the wizard. He is truly evil, and want to get rid of the world of C++! \n Please, go north and slay him and take his C++ book to save the world! I will follow you there, dont worry!:PLAYER:800000:2:false:NULL:The evil wizard locked me up in that nasty dungeon. Please, we must find the book!:Have you tried using 'meditate'? it does wonders to the skin!:I once was an adventurer like you, but then i became a fashion model:
+NPC4::Alaxandar:Old wizard coated in the blood of novice C++-programmers:OUT8:A mere injury!:What? An intruder? Begone!:PLAYER:40:10:true:VICTORYITEM:I will never give you my book!:

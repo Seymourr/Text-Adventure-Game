@@ -1,0 +1,28 @@
+OBJ1::Oyster:Weird slimy thing, heavy too.:2:10:1:
+OBJ2::Dead Body:Looks tasty.:0:0:0:
+OBJ3::TeddyBear:Teddy Bear of Unexpected Power:7:0:20:
+KEY4::KEY:
+KEY5::KEY:
+KEY6::KEY:
+VICTORYITEM::A cooking pot:Bliss:0:0:1337:
+OUT1::Dark Alley:You stand in your old dark alley, your belly tells you that you are hungry..West of you are an even darker alley, and north of you are your home.:NULL:
+OUT2::Even Darker Alley:Now you are in an even darker alley, a typical place for mutants and unexpected things to happen..:NULL:
+OUT3::Living room:Ah, your most favourite living room..There are glass shards coming from your bedroom though to the north..And some weird sounds coming from your basement to the east..:NULL:
+OUT4::Bedroom:There is a broken window here..Wonder what that could mean.:KEY4:
+OUT5::Basement:You feel discomfortable in this room, and you are still hungry..Oh if you only hadnt dropped your key you could enter the kitchen north of here:NULL:
+OUT6::Kitchen:Your finest kitchen, now where is that pot?:VICTORYITEM:
+EXIT1::west:true:OUT1:OUT2:
+EXIT2::north:true:OUT1:OUT3:
+EXIT3::east:true:OUT2:OUT1:
+EXIT4::south:true:OUT3:OUT1:
+EXIT5::north:true:OUT3:OUT4:
+EXIT6::east:false:OUT3:OUT5:
+EXIT7::south:true:OUT4:OUT3:
+EXIT8::west:false:OUT5:OUT3:
+EXIT9::north:false:OUT5:OUT6:
+EXIT10::south:false:OUT6:OUT5:
+PLAYER::Player:Hungry Guy:OUT3:Aj!:Well hello there stranger:
+PLITEM::OBJ3:
+PLWEAPON::OBJ3:
+NPC1::BigOyster:A big hard Oyster, looks angry.:OUT2:*clap clap*:*bluuuurp*:PLAYER:30:4:true:OBJ1:Le hello:
+NPC2::BadBurglar:A burglar who obviousley got trapped in the basement.:OUT5:Tch..:Hah.:PLAYER:30:7:true:KEY6:Silence!:
